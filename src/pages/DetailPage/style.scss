@@ -1,0 +1,751 @@
+@use "../../styles/theme/theme";
+@use "../../styles/colors/colors";
+
+.main--container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  #graph {
+    margin: 0 20px;
+  }
+
+  .links-container {
+    width: 400px;
+    padding: 10px 0 0 20px;
+
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .box {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+
+      h6 {
+        font-size: 0.8rem;
+        margin: 5px 10px 10px 0;
+        font-weight: 400;
+      }
+
+      div a {
+        padding: 5px;
+        margin: 0 0 0 10px;
+        font-size: 0.7rem;
+
+        span {
+          margin-right: 5px;
+        }
+      }
+
+      div a:hover {
+        color: green !important;
+      }
+
+      .icons {
+        margin-bottom: -3px;
+        font-size: medium;
+      }
+
+      #link--container {
+        display: flex;
+        flex-wrap: wrap;
+        a {
+          width: 300px;
+          margin: 5px;
+          overflow: hidden;
+        }
+      }
+    }
+
+    .category-container {
+      span {
+        padding: 5px;
+        font-size: 0.7rem;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.detail-container {
+  padding: 20px;
+}
+
+.stats-container {
+  width: 50%;
+  display: flex;
+  margin: 25px 0 25px 50px;
+
+  .name--price--container {
+    display: flex;
+  }
+
+  .rank-container {
+    display: flex;
+    margin: 40px 0 0 20px;
+    .rank {
+      margin: 0 5px;
+      height: 25px;
+      padding: 5px;
+      text-align: center;
+      color: #f3f4f6;
+      font-size: 0.8rem;
+      border-radius: 5px;
+      font-family: "San Francisco", sans-serif;
+    }
+  }
+
+  .name-container {
+    display: flex;
+    margin: 15px 0 0 20px;
+    #coin-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    h1 {
+      margin: 5px 0 0 10px;
+    }
+
+    .name {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    span {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    .price-container {
+      border: 1px solid black;
+    }
+  }
+
+  .price-container {
+    margin-top: 60px;
+    margin-left: auto;
+    display: flex;
+
+    .price {
+      h1 {
+        text-align: center;
+      }
+
+      h4 span {
+        font-size: 0.8rem;
+        margin: 0 5px;
+        font-weight: 400;
+      }
+    }
+
+    .percentage {
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin: 20px 0 0 0px;
+    }
+  }
+}
+
+.market-data-container {
+  width: 90%;
+  margin: 25px auto;
+  margin-bottom: 50px;
+  justify-content: space-between;
+
+  .data-container {
+    margin: 5px;
+    display: flex;
+    width: 49%;
+    padding: 3px;
+    justify-content: space-between;
+
+    h4 {
+      font-weight: 0.8rem;
+      font-weight: 500;
+    }
+
+    span {
+      font-weight: 500;
+    }
+  }
+}
+
+.marketstats {
+  width: 90%;
+  margin: 25px auto;
+  // color: #1f2937;
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+    font-weight: 600;
+  }
+
+  .bar-container {
+    display: flex;
+  }
+}
+
+.marketstats-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: -10px 0 10px 50px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 20px;
+  .stats-box {
+    display: flex;
+    justify-content: space-between;
+
+    .tag {
+      font-size: 0.8rem;
+      font-weight: 400;
+      margin-top: 10px;
+    }
+
+    .stats {
+      margin: 10px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.description-container {
+  width: 90%;
+  margin: auto;
+
+  .header {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+
+  p a {
+    color: colors.$light-link-color;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main--container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    #graph {
+      margin: 0;
+      z-index: 1;
+    }
+
+    #area {
+      z-index: 1;
+    }
+  }
+
+  .detail-container {
+    padding: 20px;
+  }
+
+  .links-container {
+    width: 90%;
+    // width: 400px;
+    // padding: 10px 0 0 20px;
+    // border: 1px solid black;
+    margin: 50px auto;
+
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .box {
+      width: 100%;
+      display: flex;
+      // flex-wrap: wrap;
+      margin-bottom: 5px;
+
+      h6 {
+        font-size: 0.8rem;
+        margin: 5px 10px 10px 0;
+        font-weight: 400;
+      }
+
+      div a {
+        padding: 5px;
+        margin: 10px 0 0 10px;
+        font-size: 0.7rem;
+
+        span {
+          margin-right: 5px;
+        }
+      }
+
+      div a:hover {
+        color: green !important;
+      }
+
+      .icons {
+        margin-bottom: -3px;
+        font-size: medium;
+      }
+
+      #link--container {
+        display: flex;
+        flex-wrap: wrap;
+        a {
+          margin-left: -10px;
+        }
+      }
+    }
+
+    .category-container {
+      // margin: 25px 0 25px 50px;
+
+      span {
+        padding: 5px;
+        font-size: 0.7rem;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .stats-container {
+    width: 90%;
+    display: flex;
+    margin: 25px auto;
+
+    .rank-container {
+      display: flex;
+      margin: 40px 0 0 0;
+      .rank {
+        margin: 0 5px;
+        height: 25px;
+        // width: 80px;
+        padding: 5px;
+        text-align: center;
+        color: #f3f4f6;
+        font-size: 0.8rem;
+        border-radius: 5px;
+        font-family: "San Francisco", sans-serif;
+      }
+    }
+    .name--price--container {
+      // border: 1px solid black;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .name-container {
+      display: flex;
+      margin: 15px 0 0 0;
+      #coin-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-top: 10px;
+      }
+
+      h1 {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 20px;
+      }
+
+      .name {
+        font-size: 1.8rem;
+        font-weight: 600;
+      }
+
+      span {
+        font-size: 1rem;
+        font-weight: 400;
+      }
+
+      .price-container {
+        // border: 1px solid black;
+      }
+    }
+
+    .price-container {
+      margin-top: 10px;
+      margin-left: 10px;
+      display: flex;
+
+      .price {
+        h1 {
+          text-align: center;
+        }
+
+        h4 span {
+          font-size: 0.8rem;
+          margin: 0 5px;
+          font-weight: 400;
+        }
+      }
+
+      .percentage {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 20px 0 0 0px;
+      }
+    }
+  }
+
+  .market-data-container {
+    width: 90%;
+    margin: 25px auto;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    // margin: 10px 20px;
+    // border: 1px solid black;
+
+    .data-container {
+      margin: 5px;
+      display: flex;
+      width: 100%;
+      padding: 3px;
+      justify-content: space-between;
+
+      h4 {
+        font-weight: 0.8rem;
+        font-weight: 500;
+      }
+
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+
+  .marketstats {
+    display: flex;
+    // flex-direction: column;
+    width: 90%;
+    margin: 25px auto;
+
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 50px;
+      font-weight: 600;
+    }
+
+    .bar-container {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+
+      .bar {
+        width: 70%;
+      }
+    }
+
+    .marketstats-container {
+      // width: 70%;
+      display: flex;
+      flex-direction: column;
+      // flex-wrap: wrap;
+      margin: auto;
+      padding: 20px;
+      .stats-box {
+        display: flex;
+        justify-content: space-between;
+
+        .tag {
+          font-size: 0.8rem;
+          font-weight: 400;
+          margin-top: 10px;
+        }
+
+        .stats {
+          margin: 10px;
+          font-size: 0.9rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .description-container {
+    width: 90%;
+    margin: auto;
+
+    .header {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+    }
+    p a {
+      color: colors.$light-link-color;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .main--container {
+    margin: 0;
+  }
+  .mobile--container {
+    display: none;
+  }
+
+  .detail-container {
+    padding: 0 20px;
+  }
+
+  #price--data--header {
+    margin: 0;
+    display: none;
+  }
+
+  .links-container {
+    width: 100%;
+    margin: auto;
+    margin-top: -30px;
+    padding: 5px;
+
+    h1 {
+      font-size: 1rem;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .box {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 5px;
+
+      h6 {
+        font-size: 11px;
+        margin: 5px 10px 10px 0;
+        font-weight: 400;
+      }
+
+      div a {
+        margin: 0 0 0 10px;
+        font-size: 10px;
+
+        span {
+          margin-right: 5px;
+        }
+      }
+
+      div a:hover {
+        color: green !important;
+      }
+
+      .icons {
+        margin-bottom: -3px;
+        font-size: medium;
+      }
+
+      #link--container {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        a {
+          margin-left: 3px;
+        }
+      }
+    }
+
+    .category-container {
+      // margin: 25px 0 25px 50px;
+
+      span {
+        padding: 5px;
+        font-size: 10px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .stats-container {
+    width: 100%;
+    // display: flex;
+    margin: 20px auto;
+
+    .name--price--container {
+      // border: 1px solid black;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .mobileview--rank--container {
+      width: 100%;
+      .rank-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px 0 0 0;
+        .rank {
+          margin: 1px 5px;
+          height: 20px;
+          // width: 100%;
+          padding: 5px;
+          text-align: center;
+          color: #f3f4f6;
+          font-size: 0.5rem;
+          border-radius: 5px;
+          font-family: "San Francisco", sans-serif;
+        }
+      }
+
+      .name-container {
+        display: flex;
+        margin: 10px 0 0 0;
+        #coin-img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          margin: 0;
+        }
+
+        h1 {
+          display: inline;
+          //   font-size: 20px;
+          margin: 0 0 0 10px;
+        }
+
+        .name {
+          font-size: 1.2rem;
+          font-weight: 600;
+        }
+
+        span {
+          font-size: 0.8rem;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .price-container {
+      width: 50%;
+      margin-top: 10px;
+      margin-left: 10px;
+      display: flex;
+
+      .price {
+        h1 {
+          display: inline;
+          font-size: 1.3rem;
+          text-align: center;
+        }
+
+        h4 {
+          display: flex;
+          // flex-direction: column;
+          // text-align: end;
+        }
+
+        h4 span {
+          font-size: 0.5rem;
+          margin: 5px 2px;
+          font-weight: 400;
+        }
+      }
+
+      .percentage {
+        font-size: 0.6rem;
+        font-weight: 600;
+        margin: 10px 0 0 2px;
+      }
+    }
+  }
+
+  .market-data-container {
+    width: 100%;
+    margin: 20px auto;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    // margin: 10px 20px;
+    // border: 1px solid black;
+
+    .data-container {
+      margin: 5px;
+      display: flex;
+      width: 100%;
+      padding: 3px;
+      justify-content: space-between;
+
+      h4 {
+        font-size: 11px;
+        font-weight: 500;
+      }
+
+      span {
+        font-size: 11px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .marketstats {
+    display: flex;
+    // flex-direction: column;
+    width: 100%;
+    margin: 20px auto;
+    color: #1f2937;
+
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 50px;
+      font-weight: 600;
+    }
+
+    .bar-container {
+      display: none;
+      .bar {
+        display: none;
+      }
+    }
+
+    .marketstats-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      // flex-wrap: wrap;
+      margin: auto;
+      padding: 20px;
+      .stats-box {
+        display: flex;
+        justify-content: space-between;
+
+        .tag {
+          font-size: 11px;
+          font-weight: 400;
+          //   margin-top: 10px;
+        }
+
+        .stats {
+          display: inline;
+          font-size: 11px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .description-container {
+    width: 100%;
+    margin: auto;
+
+    .header {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 11px;
+      a {
+        color: colors.$light-link-color;
+      }
+    }
+  }
+}

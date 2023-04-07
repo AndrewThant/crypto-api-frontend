@@ -1,0 +1,142 @@
+@use "../../styles/theme/theme";
+
+.trending-list a {
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  // color: #1f2937;
+}
+
+.trending-list a:hover {
+  // background-color: #f4f5f6;
+  @extend .hover;
+}
+
+.trending-list-img img {
+  width: 50px;
+  display: block;
+  margin: 0 10px;
+  border-radius: 50%;
+}
+
+.trending-list-name {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 10px 0 0 10px;
+  // color: #333333;
+}
+
+.trending-list-prices span {
+  display: block;
+  margin: 10px 0 0 10px;
+}
+
+.crypto-ptice-btc {
+  font-weight: 500;
+  font-size: 14px;
+  // color: #212529;
+}
+
+.crypto-ptice-usd {
+  font-size: 10px;
+  text-align: end;
+  // color: rgba(0, 0, 255, 0.555);
+}
+
+@media (max-width: 1000px) {
+  .trending-list a {
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 10px;
+    // color: #1f2937;
+  }
+
+  .trending-list a:hover {
+    background-color: #f4f5f6;
+  }
+
+  .trending-list-img img {
+    width: 50px;
+    display: block;
+    margin: 0 10px;
+    border-radius: 50%;
+  }
+
+  .trending-list-name {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px 0 0 10px;
+    // color: #1f2937;
+  }
+
+  .trending-list-prices span {
+    display: block;
+    margin: 10px 0 0 10px;
+  }
+
+  .crypto-ptice-btc {
+    font-weight: 500;
+    font-size: 13px;
+    // color: black;
+  }
+
+  .crypto-ptice-usd {
+    font-size: 10px;
+    text-align: end;
+  }
+}
+
+@media (max-width: 700px) {
+  .trending-list a {
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    
+    border-radius: 10px;
+    // color: #1f2937;
+  }
+
+  .trending-list a:hover {
+    background-color: #f4f5f6;
+  }
+
+  .trending-list-img img {
+    width: 50px;
+    display: block;
+    margin: 0 10px;
+    border-radius: 50%;
+  }
+
+  .trending-list-name {
+    flex: 1;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 10px 0 0 10px;
+    color: #1f2937;
+  }
+
+  .trending-list-prices span {
+    display: block;
+    margin: 10px 0 0 10px;
+  }
+
+  .crypto-ptice-btc {
+    font-weight: 500;
+    font-size: 0.8rem;
+    // color: black;
+  }
+
+  .crypto-ptice-usd {
+    font-size: 10px;
+    text-align: end;
+  }
+}

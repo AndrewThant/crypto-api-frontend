@@ -1,0 +1,145 @@
+@use "../colors/colors";
+
+body {
+  background-color: var(--bg-color);
+}
+
+.light {
+  .p {
+    color: colors.$light-text-color;
+  }
+
+  .bg {
+    background-color: colors.$light-bg-color;
+  }
+
+  .header {
+    color: colors.$light-heading-color;
+  }
+
+  .mini-header {
+    color: colors.$light-mini-header;
+  }
+
+  .border-bottom {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.284);
+  }
+
+  .border-top {
+    border-top: 1px solid rgba(0, 0, 0, 0.19);
+  }
+
+  .border-left {
+    border-left: 1px solid rgba(0, 0, 0, 0.284);
+  }
+
+  .text-muted {
+    color: colors.$light-text-50-opocity;
+  }
+
+  .link {
+    color: colors.$light-link-color;
+  }
+
+  .border {
+    border: 1px solid rgba(0, 0, 0, 0.087);
+  }
+
+  .hover {
+    background-color: colors.$light-hover-color;
+  }
+
+  .btn--hover {
+    background-color: colors.$light-hover-color !important;
+    cursor: pointer;
+  }
+
+  .input-box-hover {
+    background-color: rgba(0, 0, 0, 0.12);
+  }
+
+  .search--container--shadow {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  .card--shadow {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
+
+  .mini--header--bg {
+    background-color: colors.$light-hover-color;
+  }
+
+  .rank--container--bg {
+    background-color: colors.$light-rank-container-bd;
+  }
+}
+
+.dark {
+  .p {
+    color: colors.$dark-text-color;
+  }
+
+  .bg {
+    background-color: colors.$dark-bg-color;
+  }
+
+  .header {
+    color: colors.$dark-heading-color;
+  }
+
+  .mini-header {
+    color: colors.$dark-mini-header;
+  }
+
+  .border-bottom {
+    border-bottom: 1px solid rgba(254, 254, 254, 0.122);
+  }
+
+  .border-left {
+    border-left: 1px solid rgba(254, 254, 254, 0.122);
+  }
+
+  .text-muted {
+    color: colors.$dark-text-50-opocity;
+  }
+
+  .link {
+    color: colors.$dark-link-color;
+  }
+
+  .border {
+    border: 1px solid rgba(254, 254, 254, 0.087);
+  }
+
+  .hover {
+    background-color: colors.$dark-hover-color;
+    cursor: pointer;
+  }
+
+  .btn--hover {
+    background-color: colors.$dark-hover-color !important;
+    cursor: pointer;
+  }
+
+  .card--shadow {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+  }
+
+  .input-box-hover {
+    background-color: #2c4d63;
+  }
+
+  .mini--header--bg {
+    background-color: colors.$dark-hover-color;
+  }
+
+  .rank--container--bg {
+    background-color: colors.$dark-hover-color;
+  }
+
+  .border-top {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+  }
+}
